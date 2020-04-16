@@ -1,0 +1,54 @@
+<h1>Avaliação: Mural de Fotos</h1>
+<p>Nesta avaliação, você irá criar um mural de fotos:</p>
+<p><img src="https://s3.us-east-2.amazonaws.com/files.kenzie.academy/frontend-q2/photo_wall.gif"
+    alt="exemplo de resultado" height="400px"></p>
+<p>Perceba que o gif acima também demonstra funcionalidades extras que não fazem parte do critério inicial de aceitação.
+</p>
+<p>Nesta atividade, você estará demonstrando um entendimento básico do seguinte:</p>
+<ul>
+  <li>manutenção de estados em componentes</li>
+  <li>construção de chamadas de API de dentro do componente React</li>
+  <li>Escolha do método de ciclo de vida correto para chamadas de métodos assíncronos</li>
+  <li>iteração de estado para geração din&#226;mica de elementos DOM </li>
+</ul>
+<h2>Início</h2>
+<p>Faça o fork e clone este repositório: <a
+    href="https://gitlab.com/kenzie-academy-brasil/se/fe/react/assessment---react-photo-wall"
+    target="_blank">https://gitlab.com/kenzie-academy-brasil/se/fe/react/assessment---react-photo-wall</a></p>
+<p>Em seguida, você precisará instalar as dependências.</p>
+<p>Antes de programar, você deve se certificar que esta estrutura funciona ao rodar a aplicação:</p>
+<p>
+  <pre><code class="console">npm start
+</code></pre>
+</p>
+<h2>Critério de Aceitação</h2>
+<p>Os critérios de aceitação estão todos dispostos em <a href="src/App.jsx" target="_blank">src/App.jsx</a> nos
+  comentários. Também os reproduzimos abaixo:</p>
+<h3>Passo 1: Declarar o estado</h3>
+<p>O objeto estado deve incluir um array de fotos, que serão iteradas mais tarde e exibidas ao usuário em uma grade.</p>
+<h3>Passo 2: Declarar um método de ciclo de vida</h3>
+<p>Este método de ciclo de vida deve: ser chamado depois do componente ser renderizado inicialmente, fazer o fetch de um
+  array de fotos, adicionar esse array de fotos ao estado depois de recebido</p>
+<h3>Passo 3: Certifique-se de que imagens válidas estejam sendo rederizadas</h3>
+<p>Cada imagem gerada deve incluir: o nome do arquivo da foto, a id da foto, e a URL da foto</p>
+<p>Onde "foto" é a foto atual no array de <code>fotos</code> onde está ocorrendo a iteração.</p>
+<h3>Passo 4: Estilo</h3>
+<p>Modifique o <a href="src/App.css" target="_blank">src/App.css</a> para incluir estilos que façam o seguinte:</p>
+<ul>
+  <li>fazer com que o cabeçalho e o div .collage fiquem centralizados na página</li>
+  <li>garantir que no máximo 4 fotos sejam exibidas por linha </li>
+</ul>
+<h2>Bônus</h2>
+<p>Se tiver tempo de sobra (se não tiver outra avaliação para fazer, por exemplo), você pode considerar aprimorar a
+  qualidade de algumas formas:</p>
+<ul>
+  <li>Você deve ter percebido que, no gif, o cabeçalho permanece no topo da página enquanto as fotos estão sendo
+    roladas. Adicione estilos para conseguir fazer isso na sua versão.</li>
+  <li>Veja se você consegue achar um modo de limitar o número de fotos que são adicionadas a, digamos, 10</li>
+  <li>Depois de fazer os itens acima, veja se você consegue adicionar um botão que, ao ser clicado, adiciona as próximas
+    10 fotos (ou seja, aumenta o limite de 10 para 20, 30, 40, etc.). Você precisará consultar a documentação sobre
+    event handlers e adicionar outro estado ao seu componente para conseguir fazer isso.</li>
+</ul>
+<h2>Envio</h2>
+<p>Você precisa enviar a url de uma aplicação implementada. Se você, em vez disso, enviar um link para um repositório
+  (ou seja, apenas do código), você não receberá pontos.</p>
