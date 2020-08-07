@@ -36,7 +36,8 @@ class App extends Component {
     return (
       <React.Fragment>
         <header>
-          <h1>Photo Wall</h1>
+        <h1>Photo Wall</h1>
+
         </header>
         <div className="collage">
 

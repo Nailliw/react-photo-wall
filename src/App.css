@@ -1,9 +1,20 @@
 /* 6. Write CSS rules that cause the header and .collage div to be centered on the page */
 header{
+    width: 100%;
     text-align: center;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
 }
 
+
+
+
 .collage{
+    overflow: hidden;
+    margin-top: 15vh;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
